@@ -3,387 +3,517 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ВОДСПЕЦСТРОЙ — инженерные коммуникации от расчета до реализации: водоснабжение, канализация, водоотведение, наружные инженерные сети и реконструкция.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#0B4F8A">
+  <meta name="description" content="ВОДСПЕЦСТРОЙ — инженерные коммуникации от расчета до реализации.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="ВОДСПЕЦСТРОЙ — инженерные коммуникации под ключ">
-  <meta property="og:description" content="Расчеты, проектирование, документация и строительство инженерных коммуникаций в одном процессе.">
+  <meta property="og:description" content="Инженерные решения, проектирование, документация и строительство в одном процессе.">
+  <title>ВОДСПЕЦСТРОЙ — инженерные коммуникации под ключ</title>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <title>ВОДСПЕЦСТРОЙ — инженерные коммуникации под ключ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="review-bar">
-    <div class="review-bar__inner">
-      <span><b>Демонстрационная версия сайта</b> — структура, тексты и визуальная концепция открыты для правок заказчика.</span>
-      <button type="button" class="review-bar__button" data-open-review>Оставить правки</button>
+    <div class="shell review-bar__inner">
+      <span><b>Демонстрационная версия</b> · сайт открыт для комментариев и согласования</span>
+      <button class="link-button" type="button" data-open-review>Оставить правку</button>
     </div>
   </div>
+
   <header class="header" id="header">
-    <div class="container header__inner">
+    <div class="shell header__inner">
       <a class="brand" href="#top" aria-label="ВОДСПЕЦСТРОЙ">
         <img src="assets/logo.png" alt="ВОДСПЕЦСТРОЙ">
       </a>
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#solutions">Решения</a>
+
+      <nav class="nav" aria-label="Навигация">
+        <a href="#task">Задача</a>
         <a href="#process">Как работаем</a>
-        <a href="#objects">Работы</a>
-        <a href="#about">О компании</a>
-        <a href="#documents">Документы</a>
-        <a href="#contacts">Контакты</a>
+        <a href="#works">Виды работ</a>
+        <a href="#gallery">Фотографии</a>
+        <a href="#request">Контакты</a>
       </nav>
+
       <div class="header__actions">
-        <a class="phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
         <a class="btn btn--small" href="#request">Получить расчет</a>
-        <button class="menu-btn" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+        <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span>
+        </button>
       </div>
     </div>
+
     <div class="mobile-nav">
-      <a href="#solutions">Решения</a><a href="#process">Как работаем</a><a href="#objects">Работы</a>
-      <a href="#about">О компании</a><a href="#documents">Документы</a><a href="#contacts">Контакты</a>
+      <a href="#task">Задача</a>
+      <a href="#process">Как работаем</a>
+      <a href="#works">Виды работ</a>
+      <a href="#gallery">Фотографии</a>
+      <a href="#request">Контакты</a>
       <a class="btn" href="#request">Получить расчет</a>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <button class="section-review" type="button" data-review-section="Первый экран / Hero">Комментарий к разделу</button>
-      <div class="hero__grid container">
+    <section class="hero reviewable">
+      <button class="review-section-button" type="button" data-review-section="Первый экран">Комментарий</button>
+
+      <div class="shell hero__grid">
         <div class="hero__copy">
-          <div class="eyebrow"><span class="eyebrow__dot"></span>Инженерно-строительная компания</div>
-          <h1>Инженерные коммуникации <span>от расчета до реализации</span></h1>
-          <p class="hero__lead">Опишите задачу. Мы определим техническое решение, выполним необходимые расчеты, подготовим документацию и реализуем проект.</p>
-          <div class="hero__buttons">
-            <a class="btn" href="#task">Передать задачу специалисту <span>↗</span></a>
-            <a class="btn btn--ghost" href="#request">Получить расчет</a>
-          </div>
-          <div class="hero__meta">РАСЧЕТЫ <i>•</i> ПРОЕКТИРОВАНИЕ <i>•</i> ДОКУМЕНТАЦИЯ <i>•</i> СОГЛАСОВАНИЯ <i>•</i> СТРОИТЕЛЬСТВО</div>
-        </div>
-        
-<div class="hero__visual hero__visual--photo">
-  <div class="hero-photo-card">
-    <img src="assets/photos/hero-capremont-kollektora.jpg" alt="Капремонт коллектора Ду 3000">
-    <div class="hero-image__overlay hero-image__overlay--photo"></div>
-    <div class="hero-image__label"><span>РЕАЛЬНЫЕ РАБОТЫ</span> Капремонт коллектора Ду 3000</div>
-    <div class="hero-photo-card__badge">Без вымышленных объектов и адресов — на сайте используются реальные фотографии выполненных работ.</div>
-    <div class="hero-node hero-node--one"></div>
-    <div class="hero-node hero-node--two"></div>
-    <div class="hero-node hero-node--three"></div>
-  </div>
-  <div class="hero__caption"><span>Реальные фотографии работ</span><b>→</b><span>Инженерные решения полного цикла</span></div>
-</div>
+          <div class="eyebrow"><span></span>Инженерно-строительная компания</div>
+          <h1>Инженерные коммуникации <em>от расчета до реализации</em></h1>
+          <p class="lead">
+            Приходите с задачей, а не со списком услуг. Разберем исходные данные,
+            сформируем техническое решение и проведем проект до реализации.
+          </p>
 
+          <div class="hero__actions">
+            <a class="btn" href="#task">Передать задачу <b>↗</b></a>
+            <a class="btn btn--ghost" href="#works">Посмотреть работы</a>
+          </div>
+
+          <div class="hero__points">
+            <span>Расчеты</span><i></i>
+            <span>Проектирование</span><i></i>
+            <span>Документация</span><i></i>
+            <span>Строительство</span>
+          </div>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="assets/photos/hero-capremont-kollektora.jpg" alt="Капремонт коллектора Ду 3000">
+          <div class="photo-shade"></div>
+          <figcaption>
+            <span>Выполненные работы</span>
+            <strong>Капремонт коллектора Ду 3000</strong>
+          </figcaption>
+          <div class="pipe-mark pipe-mark--one"></div>
+          <div class="pipe-mark pipe-mark--two"></div>
+        </figure>
       </div>
-      <div class="engineering-line engineering-line--hero"><span class="line-node"></span><span class="line-node"></span><span class="line-node"></span></div>
+
+      <div class="pipeline pipeline--hero"><i></i><i></i><i></i></div>
     </section>
 
-    <section class="section task" id="task">
-      <button class="section-review" type="button" data-review-section="Блок «Что необходимо решить?»">Комментарий к разделу</button>
-      <div class="container">
+    <section class="section task reviewable" id="task">
+      <button class="review-section-button" type="button" data-review-section="Блок «Что необходимо решить?»">Комментарий</button>
+
+      <div class="shell">
         <div class="section-head">
-          <div><div class="eyebrow">01 / Задача</div><h2>Что необходимо решить?</h2></div>
-          <p>Не обязательно заранее знать техническое решение. Расскажите, что происходит с вашим объектом.</p>
+          <div>
+            <div class="eyebrow">01 / Задача</div>
+            <h2>Что необходимо решить?</h2>
+          </div>
+          <p>
+            Не обязательно заранее знать состав работ или техническое решение.
+            Опишите ситуацию с объектом — инженерный сценарий определим вместе.
+          </p>
         </div>
-        <div class="task-grid">
+
+        <div class="task-layout">
           <div class="task-options">
-            <button class="task-card active" data-task="new">Нужно построить новую инженерную сеть <span>↗</span></button>
-            <button class="task-card" data-task="connect">Нужно подключить объект к сетям <span>↗</span></button>
-            <button class="task-card" data-task="design">Нужно спроектировать систему <span>↗</span></button>
-            <button class="task-card" data-task="reconstruct">Нужно реконструировать существующие сети <span>↗</span></button>
-            <button class="task-card" data-task="docs">Нужно подготовить документацию <span>↗</span></button>
-            <button class="task-card" data-task="estimate">Нужно рассчитать стоимость <span>↗</span></button>
-            <button class="task-card" data-task="problem">Есть проблема с существующими коммуникациями <span>↗</span></button>
-            <button class="task-card" data-task="consult">Пока не знаю — нужна консультация <span>↗</span></button>
+            <button class="task-option active" data-task="new"><span>01</span>Построить новую инженерную сеть<b>↗</b></button>
+            <button class="task-option" data-task="connect"><span>02</span>Подключить объект к сетям<b>↗</b></button>
+            <button class="task-option" data-task="reconstruct"><span>03</span>Реконструировать существующие сети<b>↗</b></button>
+            <button class="task-option" data-task="docs"><span>04</span>Подготовить проект и документацию<b>↗</b></button>
+            <button class="task-option" data-task="problem"><span>05</span>Разобраться с проблемой на сети<b>↗</b></button>
+            <button class="task-option" data-task="consult"><span>06</span>Нужна консультация специалиста<b>↗</b></button>
           </div>
-          <div class="task-result">
-            <div class="task-result__number">01</div>
-            <div class="task-result__icon">⌁</div>
-            <h3 id="task-title">Новая инженерная сеть</h3>
-            <p id="task-text">Определим состав работ, исходные данные и оптимальное техническое решение — от обследования и расчетов до реализации.</p>
-            <div class="mini-flow">
-              <span>Исходные данные</span><i>→</i><span>Обследование</span><i>→</i><span>Расчет</span><i>→</i><span>Решение</span>
+
+          <aside class="task-result">
+            <div class="task-result__top">
+              <span id="taskNumber">01</span>
+              <small>СЦЕНАРИЙ РЕШЕНИЯ</small>
             </div>
-            <a class="btn btn--dark" href="#request">Обсудить задачу <span>↗</span></a>
+            <h3 id="taskTitle">Новая инженерная сеть</h3>
+            <p id="taskText">
+              Соберем исходные данные, оценим ограничения объекта, выполним расчеты
+              и сформируем состав работ до выхода на строительство.
+            </p>
+            <div class="mini-pipeline" id="taskFlow">
+              <span>Исходные данные</span><i>→</i><span>Расчет</span><i>→</i><span>Решение</span><i>→</i><span>Реализация</span>
+            </div>
+            <div class="task-result__note">
+              <b>Вам не нужно быть инженером.</b>
+              Достаточно объяснить, какой результат нужен на объекте.
+            </div>
+            <a class="text-link" href="#request">Обсудить задачу <span>↗</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process reviewable" id="process">
+      <button class="review-section-button" type="button" data-review-section="Блок «Как работаем»">Комментарий</button>
+
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">02 / Процесс</div>
+            <h2>Задача → решение → реализация</h2>
+          </div>
+          <p>
+            Один понятный маршрут вместо набора разрозненных услуг.
+            Техническое решение формируется до начала строительно-монтажных работ.
+          </p>
+        </div>
+
+        <div class="process-line">
+          <article>
+            <span>01</span>
+            <i></i>
+            <h3>Задача и исходные данные</h3>
+            <p>Фиксируем цель, изучаем доступную информацию и ограничения объекта.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <i></i>
+            <h3>Инженерное решение</h3>
+            <p>Расчеты, обследование, выбор технологии и подготовка документации.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <i></i>
+            <h3>Реализация</h3>
+            <p>Организация и выполнение необходимых строительно-монтажных работ.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <i></i>
+            <h3>Готовая система</h3>
+            <p>Испытания, исполнительная документация и завершение работ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works reviewable" id="works">
+      <button class="review-section-button" type="button" data-review-section="Блок «Виды работ»">Комментарий</button>
+
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">03 / Работы</div>
+            <h2>Инженерные работы <em>на реальных сетях</em></h2>
+          </div>
+          <p>
+            Показываем направления через реальные фотографии выполненных работ —
+            без каталога ради каталога.
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card">
+            <img src="assets/photos/vvod-v-zdanie-vodoprovoda.jpg" alt="Ввод в здание водопровода" loading="lazy">
+            <div class="work-card__body"><span>01</span><h3>Вводы и переврезки</h3><p>Подключение, вводы и изменение существующей схемы сети.</p><small>На фото: ввод в здание водопровода</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/vosstanovlenie-kollektora-du-1500.jpg" alt="Восстановление коллектора Ду 1500" loading="lazy">
+            <div class="work-card__body"><span>02</span><h3>Коллекторы</h3><p>Восстановление, капитальный ремонт и обслуживание коллекторов.</p><small>На фото: восстановление коллектора Ду 1500</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/montazh-kolodtsev.jpg" alt="Монтаж колодцев" loading="lazy">
+            <div class="work-card__body"><span>03</span><h3>Монтаж колодцев</h3><p>Устройство колодцев и элементов наружных инженерных сетей.</p><small>На фото: монтаж колодцев</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/montazh-zadvizhki-du-800.jpg" alt="Монтаж задвижки Ду 800" loading="lazy">
+            <div class="work-card__body"><span>04</span><h3>Узлы и арматура</h3><p>Монтаж задвижек, арматуры и технологических узлов сети.</p><small>На фото: монтаж задвижки Ду 800</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/izgotovlenie-kns.jpg" alt="Изготовление КНС" loading="lazy">
+            <div class="work-card__body"><span>05</span><h3>КНС и камеры</h3><p>Изготовление и обвязка камер и канализационных насосных станций.</p><small>На фото: изготовление КНС</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/gnb.jpg" alt="Горизонтально направленное бурение" loading="lazy">
+            <div class="work-card__body"><span>06</span><h3>ГНБ</h3><p>Прокладка участков инженерной сети методом горизонтального бурения.</p><small>На фото: горизонтально направленное бурение</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/teleinspektsiya.jpg" alt="Телеинспекция" loading="lazy">
+            <div class="work-card__body"><span>07</span><h3>Диагностика и обслуживание</h3><p>Телеинспекция, диагностика и технологические операции на сети.</p><small>На фото: телеинспекция</small></div>
+          </article>
+
+          <article class="work-card">
+            <img src="assets/photos/vosstanovlenie-blagoustroystva.jpg" alt="Восстановление благоустройства" loading="lazy">
+            <div class="work-card__body"><span>08</span><h3>Восстановление благоустройства</h3><p>Восстановление территории и покрытий после инженерных работ.</p><small>На фото: восстановление благоустройства</small></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section turnkey reviewable">
+      <button class="review-section-button review-section-button--dark" type="button" data-review-section="Блок «Под ключ»">Комментарий</button>
+
+      <div class="shell turnkey__grid">
+        <div class="turnkey__copy">
+          <div class="eyebrow">04 / Под ключ</div>
+          <h2>Один подрядчик — <em>весь инженерный цикл</em></h2>
+          <p>
+            Расчеты, проектирование, документация и реализация работают как один процесс.
+            Заказчику не приходится собирать проект из нескольких несвязанных подрядчиков.
+          </p>
+          <a class="btn btn--light" href="#request">Обсудить проект <b>↗</b></a>
+        </div>
+
+        <div class="cycle">
+          <div class="cycle__line"></div>
+          <div class="cycle-item"><span>01</span><b>Исходные данные</b><small>объект и ограничения</small></div>
+          <div class="cycle-item"><span>02</span><b>Расчеты</b><small>параметры решения</small></div>
+          <div class="cycle-item"><span>03</span><b>Проект</b><small>техническая схема</small></div>
+          <div class="cycle-item"><span>04</span><b>Документация</b><small>проектная и рабочая</small></div>
+          <div class="cycle-item"><span>05</span><b>Строительство</b><small>реализация решения</small></div>
+          <div class="cycle-item"><span>06</span><b>Сдача</b><small>испытания и документы</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery reviewable" id="gallery">
+      <button class="review-section-button" type="button" data-review-section="Карусель фотографий">Комментарий</button>
+
+      <div class="shell">
+        <div class="section-head section-head--gallery">
+          <div>
+            <div class="eyebrow">05 / Выполненные работы</div>
+            <h2>Фотографии с площадок</h2>
+          </div>
+
+          <div class="gallery-controls" aria-label="Управление каруселью">
+            <button type="button" class="carousel-button" data-carousel-prev aria-label="Предыдущие фотографии">←</button>
+            <button type="button" class="carousel-button" data-carousel-next aria-label="Следующие фотографии">→</button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="statement">
-      <button class="section-review" type="button" data-review-section="Блок «Не нужно быть инженером»">Комментарий к разделу</button>
-      <div class="container statement__inner">
-        <div class="statement__line"></div>
-        <div>
-          <div class="eyebrow">Инженерный подход</div>
-          <h2>Вам не нужно заранее знать, <em>как</em> решить инженерную задачу.</h2>
-          <p>Достаточно описать, что необходимо сделать. Специалисты ВОДСПЕЦСТРОЙ помогут определить состав работ, исходные данные и техническое решение.</p>
-          <a class="text-link" href="#request">Передать задачу специалисту <span>↗</span></a>
+        <div class="carousel-wrap">
+          <div class="carousel" id="workCarousel">
+            <button class="gallery-slide" type="button" data-image="assets/photos/hero-capremont-kollektora.jpg" data-title="Капремонт коллектора Ду 3000">
+              <img src="assets/photos/hero-capremont-kollektora.jpg" alt="Капремонт коллектора Ду 3000" loading="lazy">
+              <span>Коллекторы</span><strong>Капремонт коллектора Ду 3000</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/perevrezka-vodovvoda.jpg" data-title="Переврезка водоввода">
+              <img src="assets/photos/perevrezka-vodovvoda.jpg" alt="Переврезка водоввода" loading="lazy">
+              <span>Водоснабжение</span><strong>Переврезка водоввода</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/demontazh-zhb-truby-du-2500.jpg" data-title="Демонтаж ЖБ трубы Ду 2500">
+              <img src="assets/photos/demontazh-zhb-truby-du-2500.jpg" alt="Демонтаж ЖБ трубы Ду 2500" loading="lazy">
+              <span>Реконструкция</span><strong>Демонтаж ЖБ трубы Ду 2500</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/svarochnye-raboty.jpg" data-title="Сварочные работы в ограниченных условиях">
+              <img src="assets/photos/svarochnye-raboty.jpg" alt="Сварочные работы в ограниченных условиях" loading="lazy">
+              <span>Монтаж</span><strong>Сварочные работы в ограниченных условиях</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/chistka-kollektora-du-1200.jpg" data-title="Чистка коллектора Ду 1200">
+              <img src="assets/photos/chistka-kollektora-du-1200.jpg" alt="Чистка коллектора Ду 1200" loading="lazy">
+              <span>Обслуживание</span><strong>Чистка коллектора Ду 1200</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/dezinfektsiya-truboprovodov-2.jpg" data-title="Дезинфекция трубопроводов">
+              <img src="assets/photos/dezinfektsiya-truboprovodov-2.jpg" alt="Дезинфекция трубопроводов" loading="lazy">
+              <span>Технологические работы</span><strong>Дезинфекция трубопроводов</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/raboty-zimoy.jpg" data-title="Работы зимой">
+              <img src="assets/photos/raboty-zimoy.jpg" alt="Работы зимой" loading="lazy">
+              <span>Полевые работы</span><strong>Работы зимой</strong>
+            </button>
+
+            <button class="gallery-slide" type="button" data-image="assets/photos/ukladka-bruschatki.jpg" data-title="Укладка брусчатки">
+              <img src="assets/photos/ukladka-bruschatki.jpg" alt="Укладка брусчатки" loading="lazy">
+              <span>Благоустройство</span><strong>Укладка брусчатки</strong>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-hint">
+          <span>Перетаскивайте карусель или используйте стрелки.</span>
+          <span>Нажмите на фотографию для просмотра.</span>
         </div>
       </div>
     </section>
 
-    <section class="section process" id="process">
-      <button class="section-review" type="button" data-review-section="Блок «Один подрядчик — весь цикл»">Комментарий к разделу</button>
-      <div class="container">
-        <div class="section-head">
-          <div><div class="eyebrow">02 / Процесс</div><h2>Один подрядчик —<br><span>весь инженерный цикл</span></h2></div>
-          <p>Один процесс от исходных данных до сдачи готовой системы. На каждом этапе понятен следующий шаг.</p>
+    <section class="section request reviewable" id="request">
+      <button class="review-section-button" type="button" data-review-section="Форма заявки">Комментарий</button>
+
+      <div class="shell request__grid">
+        <div class="request__copy">
+          <div class="eyebrow">06 / Следующий шаг</div>
+          <h2>Расскажите, <em>что нужно сделать</em></h2>
+          <p>
+            Не требуется заранее готовить техническое решение. Передайте исходные данные,
+            описание задачи или имеющиеся документы.
+          </p>
+
+          <div class="request-steps">
+            <div><span>01</span><p><b>Получаем задачу</b><small>описание, ТЗ, схема или фотографии</small></p></div>
+            <div><span>02</span><p><b>Уточняем исходные данные</b><small>задаем только необходимые технические вопросы</small></p></div>
+            <div><span>03</span><p><b>Определяем следующий шаг</b><small>обследование, расчет, проектирование или реализация</small></p></div>
+          </div>
         </div>
-        <div class="timeline">
-          <div class="timeline__track"></div>
-          <article class="step"><b>01</b><span class="step__node"></span><h3>Задача</h3><p>Фиксируем потребность и цели проекта.</p></article>
-          <article class="step"><b>02</b><span class="step__node"></span><h3>Обследование</h3><p>Собираем исходные данные об объекте.</p></article>
-          <article class="step"><b>03</b><span class="step__node"></span><h3>Расчеты</h3><p>Проверяем параметры и варианты решения.</p></article>
-          <article class="step"><b>04</b><span class="step__node"></span><h3>Проект</h3><p>Разрабатываем техническое решение.</p></article>
-          <article class="step"><b>05</b><span class="step__node"></span><h3>Документация</h3><p>Готовим проектную и рабочую документацию.</p></article>
-          <article class="step"><b>06</b><span class="step__node"></span><h3>Согласования</h3><p>Организуем необходимые процедуры.</p></article>
-          <article class="step"><b>07</b><span class="step__node"></span><h3>Строительство</h3><p>Выполняем строительно-монтажные работы.</p></article>
-          <article class="step"><b>08</b><span class="step__node"></span><h3>Сдача</h3><p>Испытания, исполнительная документация и результат.</p></article>
-        </div>
-      </div>
-    </section>
 
-    
-<section class="section solutions" id="solutions">
-  <button class="section-review" type="button" data-review-section="Блок инженерных решений">Комментарий к разделу</button>
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">03 / Работы</div><h2>Реальные виды работ<br><span>в материалах сайта</span></h2></div>
-      <p>Секция ниже собрана на основе предоставленных фотографий выполненных работ. Мы не выдумываем объекты, адреса и заказчиков — показываем то, что уже подтверждено материалами.</p>
-    </div>
-    <div class="solutions-grid solutions-grid--photos">
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/vvod-v-zdanie-vodoprovoda.jpg" alt="Вводы и переврезки" loading="lazy"></div><div class="solution-card__body"><span>01</span><h3>Вводы и переврезки</h3><p>Работы по подключению, вводам и изменению схемы сети на действующих участках.</p><small>На фото: ввод в здание водопровода</small></div></article>
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/vosstanovlenie-kollektora-du-1500.jpg" alt="Коллекторы" loading="lazy"></div><div class="solution-card__body"><span>02</span><h3>Коллекторы</h3><p>Восстановление, капитальный ремонт, чистка и сопутствующие работы на коллекторах.</p><small>На фото: восстановление коллектора Ду 1500</small></div></article>
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/montazh-kolodtsev.jpg" alt="Монтаж колодцев" loading="lazy"></div><div class="solution-card__body"><span>03</span><h3>Монтаж колодцев</h3><p>Устройство колодцев и элементов наружных инженерных сетей.</p><small>На фото: монтаж колодцев</small></div></article>
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/montazh-zadvizhki-du-800.jpg" alt="Узлы и арматура" loading="lazy"></div><div class="solution-card__body"><span>04</span><h3>Узлы и арматура</h3><p>Монтаж арматуры, задвижек и узлов инженерной сети.</p><small>На фото: монтаж задвижки Ду 800</small></div></article>
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/izgotovlenie-kns.jpg" alt="КНС и камеры" loading="lazy"></div><div class="solution-card__body"><span>05</span><h3>КНС и камеры</h3><p>Изготовление и обвязка узлов, камер и канализационных насосных станций.</p><small>На фото: изготовление КНС</small></div></article>
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/gnb.jpg" alt="Горизонтально направленное бурение" loading="lazy"></div><div class="solution-card__body"><span>06</span><h3>ГНБ</h3><p>Горизонтально направленное бурение и прокладка участков инженерной сети без открытой траншеи.</p><small>На фото: горизонтально направленное бурение</small></div></article>
-      <article class="solution-card"><div class="solution-card__media"><img src="assets/photos/teleinspektsiya.jpg" alt="Диагностика и обслуживание" loading="lazy"></div><div class="solution-card__body"><span>07</span><h3>Диагностика и обслуживание</h3><p>Телеинспекция, сервисные мероприятия и технологические операции на сети.</p><small>На фото: телеинспекция</small></div></article>
-      <article class="solution-card solution-card--accent"><div class="solution-card__media"><img src="assets/photos/vosstanovlenie-blagoustroystva.jpg" alt="Восстановление благоустройства" loading="lazy"></div><div class="solution-card__body"><span>08</span><h3>Восстановление благоустройства</h3><p>Завершающие работы: восстановление территории, покрытий и благоустройства после инженерных работ.</p><small>На фото: восстановление благоустройства</small></div></article>
-    </div>
-  </div>
-</section>
+        <form class="lead-form" id="leadForm">
+          <div class="form-row">
+            <label>Тип задачи
+              <select required>
+                <option value="">Выберите</option>
+                <option>Новая сеть</option>
+                <option>Подключение объекта</option>
+                <option>Реконструкция</option>
+                <option>Проектирование / документация</option>
+                <option>Диагностика / проблема на сети</option>
+                <option>Другое</option>
+              </select>
+            </label>
 
-<section class="section turnkey">
+            <label>Инженерная система
+              <select required>
+                <option value="">Выберите</option>
+                <option>Водоснабжение</option>
+                <option>Канализация</option>
+                <option>Водоотведение</option>
+                <option>Наружные сети</option>
+                <option>Другое / пока не знаю</option>
+              </select>
+            </label>
+          </div>
 
-      <button class="section-review" type="button" data-review-section="Блок «Под ключ»">Комментарий к разделу</button>
-      <div class="container turnkey__grid">
-        <div>
-          <div class="eyebrow">04 / Под ключ</div>
-          <h2>От исходных данных<br>до <span>готовой системы</span></h2>
-          <p>Заказчику не нужно координировать нескольких подрядчиков. Мы объединяем инженерные расчеты, проектирование, документацию и реализацию в едином процессе.</p>
-          <a class="btn" href="#request">Обсудить проект <span>↗</span></a>
-        </div>
-        <div class="turnkey-diagram">
-          <div class="diagram-center">ВСС</div>
-          <div class="orbit o1"><span>Расчет</span></div><div class="orbit o2"><span>Проект</span></div>
-          <div class="orbit o3"><span>Документация</span></div><div class="orbit o4"><span>Согласование</span></div>
-          <div class="orbit o5"><span>Строительство</span></div><div class="orbit o6"><span>Сдача</span></div>
-        </div>
-      </div>
-    </section>
+          <label>Комментарий
+            <textarea rows="5" placeholder="Опишите задачу своими словами"></textarea>
+          </label>
 
-    
-<section class="section objects" id="objects">
-  <button class="section-review" type="button" data-review-section="Блок видов работ">Комментарий к разделу</button>
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">05 / Практика</div><h2>Как выглядят работы<br><span>в реальных условиях</span></h2></div>
-      <p>Ниже — несколько фрагментов полевых, монтажных и сервисных работ. Этот блок показывает фактический характер задач, а не абстрактные иллюстрации.</p>
-    </div>
-    <div class="work-types-grid">
-      <article class="work-type-card work-type-card--wide"><div class="work-type-card__media"><img src="assets/photos/raboty-zimoy.jpg" alt="Работы зимой" loading="lazy"></div><div class="work-type-card__body"><span>01</span><h3>Работы зимой</h3><p>Выполнение инженерных работ в сезонных условиях.</p></div></article>
-      <article class="work-type-card"><div class="work-type-card__media"><img src="assets/photos/svarochnye-raboty.jpg" alt="Сварочные работы в ограниченных условиях" loading="lazy"></div><div class="work-type-card__body"><span>02</span><h3>Сварочные работы</h3><p>Работа в ограниченных условиях и в существующей среде.</p></div></article>
-      <article class="work-type-card"><div class="work-type-card__media"><img src="assets/photos/zemleroynye-raboty.jpg" alt="Землеройные работы ручные" loading="lazy"></div><div class="work-type-card__body"><span>03</span><h3>Землеройные работы</h3><p>Ручная подготовка участков и локальные вскрытия трасс.</p></div></article>
-      <article class="work-type-card"><div class="work-type-card__media"><img src="assets/photos/teleinspektsiya.jpg" alt="Телеинспекция" loading="lazy"></div><div class="work-type-card__body"><span>04</span><h3>Телеинспекция</h3><p>Диагностика состояния сети и обследование инженерных участков.</p></div></article>
-      <article class="work-type-card work-type-card--wide"><div class="work-type-card__media"><img src="assets/photos/dezinfektsiya-truboprovodov-2.jpg" alt="Подготовка и выполнение дезинфекции трубопроводов" loading="lazy"></div><div class="work-type-card__body"><span>05</span><h3>Дезинфекция трубопроводов</h3><p>Технологические процедуры перед вводом участка в эксплуатацию.</p></div></article>
-    </div>
-  </div>
-</section>
+          <div class="form-row">
+            <label>Телефон
+              <input type="tel" required placeholder="+7 ...">
+            </label>
+            <label>Регион / город
+              <input type="text" placeholder="При необходимости">
+            </label>
+          </div>
 
+          <label class="file-field">
+            <input type="file" multiple>
+            <span>＋ Добавить ТЗ, схему или фотографии</span>
+          </label>
 
-<section class="section portfolio">
-  <button class="section-review" type="button" data-review-section="Портфолио">Комментарий к разделу</button>
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">06 / Галерея работ</div><h2>Реальные фотографии<br><span>выполненных работ</span></h2></div>
-      <p>Карточки ниже собраны по фактическим названиям работ из архива. Без придуманных объектов, адресов и не подтвержденных показателей.</p>
-    </div>
-    <div class="portfolio-note">Фотографии используются как демонстрационный материал для согласования структуры сайта. Подписи соответствуют видам работ.</div>
-    <div class="filters portfolio-filters">
-      <button class="filter active" data-filter="all">Все</button>
-      <button class="filter" data-filter="water">Вводы и переврезки</button>
-      <button class="filter" data-filter="collectors">Коллекторы</button>
-      <button class="filter" data-filter="install">Монтаж</button>
-      <button class="filter" data-filter="service">Диагностика и сервис</button>
-      <button class="filter" data-filter="site">Благоустройство</button>
-    </div>
-    <div class="gallery-grid">
-      <article class="gallery-card" data-category="water"><div class="gallery-card__media"><img src="assets/photos/vvod-v-zdanie-vodoprovoda.jpg" alt="Ввод в здание водопровода с сохранением отмостки" loading="lazy"></div><div class="gallery-card__body"><span>Вводы и переврезки</span><h3>Ввод в здание водопровода с сохранением отмостки</h3></div></article>
-      <article class="gallery-card" data-category="water"><div class="gallery-card__media"><img src="assets/photos/perevrezka-vodovvoda.jpg" alt="Переврезка водоввода" loading="lazy"></div><div class="gallery-card__body"><span>Вводы и переврезки</span><h3>Переврезка водоввода</h3></div></article>
-      <article class="gallery-card" data-category="water"><div class="gallery-card__media"><img src="assets/photos/perevrezka.jpg" alt="Переврезка" loading="lazy"></div><div class="gallery-card__body"><span>Вводы и переврезки</span><h3>Переврезка</h3></div></article>
-      <article class="gallery-card" data-category="water service"><div class="gallery-card__media"><img src="assets/photos/dezinfektsiya-truboprovodov.jpg" alt="Подготовка и выполнение дезинфекции трубопроводов" loading="lazy"></div><div class="gallery-card__body"><span>Технологические работы</span><h3>Подготовка и выполнение дезинфекции трубопроводов</h3></div></article>
-      <article class="gallery-card" data-category="collectors"><div class="gallery-card__media"><img src="assets/photos/vosstanovlenie-kollektora-du-1500.jpg" alt="Восстановление коллектора Ду 1500" loading="lazy"></div><div class="gallery-card__body"><span>Коллекторы</span><h3>Восстановление коллектора Ду 1500</h3></div></article>
-      <article class="gallery-card" data-category="collectors"><div class="gallery-card__media"><img src="assets/photos/hero-capremont-kollektora.jpg" alt="Капремонт коллектора Ду 3000" loading="lazy"></div><div class="gallery-card__body"><span>Коллекторы</span><h3>Капремонт коллектора Ду 3000</h3></div></article>
-      <article class="gallery-card" data-category="collectors service"><div class="gallery-card__media"><img src="assets/photos/chistka-kollektorov-du-800.jpg" alt="Чистка коллекторов Ду 800" loading="lazy"></div><div class="gallery-card__body"><span>Коллекторы</span><h3>Чистка коллекторов Ду 800</h3></div></article>
-      <article class="gallery-card" data-category="collectors service"><div class="gallery-card__media"><img src="assets/photos/chistka-kollektora-du-1200.jpg" alt="Чистка коллектора Ду 1200" loading="lazy"></div><div class="gallery-card__body"><span>Коллекторы</span><h3>Чистка коллектора Ду 1200</h3></div></article>
-      <article class="gallery-card" data-category="collectors"><div class="gallery-card__media"><img src="assets/photos/demontazh-zhb-truby-du-2500.jpg" alt="Демонтаж ЖБ трубы Ду 2500" loading="lazy"></div><div class="gallery-card__body"><span>Коллекторы</span><h3>Демонтаж ЖБ трубы Ду 2500</h3></div></article>
-      <article class="gallery-card" data-category="install"><div class="gallery-card__media"><img src="assets/photos/montazh-kolodtsev.jpg" alt="Монтаж колодцев" loading="lazy"></div><div class="gallery-card__body"><span>Монтаж</span><h3>Монтаж колодцев</h3></div></article>
-      <article class="gallery-card" data-category="install"><div class="gallery-card__media"><img src="assets/photos/montazh-zadvizhki-du-800.jpg" alt="Монтаж задвижки Ду 800" loading="lazy"></div><div class="gallery-card__body"><span>Монтаж</span><h3>Монтаж задвижки Ду 800</h3></div></article>
-      <article class="gallery-card" data-category="install"><div class="gallery-card__media"><img src="assets/photos/obvyazka-kamer.jpg" alt="Обвязка камер" loading="lazy"></div><div class="gallery-card__body"><span>Монтаж</span><h3>Обвязка камер</h3></div></article>
-      <article class="gallery-card" data-category="install"><div class="gallery-card__media"><img src="assets/photos/izgotovlenie-kns.jpg" alt="Изготовление КНС" loading="lazy"></div><div class="gallery-card__body"><span>Монтаж</span><h3>Изготовление КНС</h3></div></article>
-      <article class="gallery-card" data-category="service"><div class="gallery-card__media"><img src="assets/photos/gnb.jpg" alt="Горизонтально направленное бурение" loading="lazy"></div><div class="gallery-card__body"><span>Спецработы</span><h3>Горизонтально направленное бурение</h3></div></article>
-      <article class="gallery-card" data-category="service"><div class="gallery-card__media"><img src="assets/photos/teleinspektsiya.jpg" alt="Телеинспекция" loading="lazy"></div><div class="gallery-card__body"><span>Диагностика</span><h3>Телеинспекция</h3></div></article>
-      <article class="gallery-card" data-category="service"><div class="gallery-card__media"><img src="assets/photos/svarochnye-raboty.jpg" alt="Сварочные работы в ограниченных условиях" loading="lazy"></div><div class="gallery-card__body"><span>Спецработы</span><h3>Сварочные работы в ограниченных условиях</h3></div></article>
-      <article class="gallery-card" data-category="site"><div class="gallery-card__media"><img src="assets/photos/vosstanovlenie-blagoustroystva.jpg" alt="Восстановление благоустройства" loading="lazy"></div><div class="gallery-card__body"><span>Благоустройство</span><h3>Восстановление благоустройства</h3></div></article>
-      <article class="gallery-card" data-category="site"><div class="gallery-card__media"><img src="assets/photos/ukladka-bruschatki.jpg" alt="Укладка брусчатки" loading="lazy"></div><div class="gallery-card__body"><span>Благоустройство</span><h3>Укладка брусчатки</h3></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section why" id="about">
-
-      <button class="section-review" type="button" data-review-section="Блок «Почему ВОДСПЕЦСТРОЙ»">Комментарий к разделу</button>
-      <div class="container">
-        <div class="section-head">
-          <div><div class="eyebrow">07 / Подход</div><h2>Почему <span>ВОДСПЕЦСТРОЙ</span></h2></div>
-          <p>Не рекламные обещания, а принципы, по которым должен быть устроен инженерный проект и его публичная подача.</p>
-        </div>
-        <div class="why-grid">
-          <div class="why-card"><b>01</b><h3>Один подрядчик</h3><p>Один исполнитель отвечает за весь цикл.</p></div>
-          <div class="why-card"><b>02</b><h3>Инженерный подход</h3><p>Техническое решение формируется до начала строительства.</p></div>
-          <div class="why-card"><b>03</b><h3>Расчеты</h3><p>Решения принимаются на основе исходных данных и расчетов.</p></div>
-          <div class="why-card"><b>04</b><h3>Документация</h3><p>Проектная, рабочая и исполнительная документация.</p></div>
-          <div class="why-card"><b>05</b><h3>Комплексность</h3><p>Несколько инженерных систем в одном проекте.</p></div>
-          <div class="why-card"><b>06</b><h3>Прозрачный процесс</h3><p>Заказчик понимает, что происходит на каждом этапе.</p></div>
-        </div>
-        <div class="metrics"><div><strong>XX</strong><span>лет опыта <em class="demo-mark">уточнить</em></span></div><div><strong>XX</strong><span>реализованных объектов <em class="demo-mark">уточнить</em></span></div><div><strong>XX</strong><span>регионов <em class="demo-mark">уточнить</em></span></div><div><strong>XX</strong><span>км инженерных сетей <em class="demo-mark">уточнить</em></span></div></div>
-      </div>
-    </section>
-
-    <section class="section documents" id="documents">
-      <button class="section-review" type="button" data-review-section="Документация">Комментарий к разделу</button>
-      <div class="container documents__grid">
-        <div><div class="eyebrow">08 / Документация</div><h2>Инженерные решения начинаются с <span>расчетов и документации</span></h2><p>Строительство — только часть проекта. Правильное решение начинается с исходных данных, расчетов и документации.</p><a class="text-link" href="#request">Обсудить документацию <span>↗</span></a></div>
-        <div class="docs-list">
-          <div><span>01</span><b>Инженерные расчеты</b><i>↗</i></div><div><span>02</span><b>Технические решения</b><i>↗</i></div>
-          <div><span>03</span><b>Проектная документация</b><i>↗</i></div><div><span>04</span><b>Рабочая документация</b><i>↗</i></div>
-          <div><span>05</span><b>Сметная документация</b><i>↗</i></div><div><span>06</span><b>Исполнительная документация</b><i>↗</i></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section request" id="request">
-      <button class="section-review" type="button" data-review-section="Форма предварительного расчета">Комментарий к разделу</button>
-      <div class="container request__grid">
-        <div class="request__intro"><div class="eyebrow">09 / Расчет</div><h2>Получите предварительную <span>оценку проекта</span></h2><p>Передайте исходные данные — специалист отдела продаж изучит задачу и свяжется с вами для уточнения.</p><div class="request__note">Стоимость зависит от технических условий, характеристик объекта, объемов работ и других исходных данных.</div></div>
-        <form class="form" id="leadForm">
-          <label>Тип объекта<select name="object" required><option value="">Выберите</option><option>Промышленный объект</option><option>Жилой комплекс</option><option>Коммерческий объект</option><option>Складской комплекс</option><option>Муниципальный объект</option><option>Другое</option></select></label>
-          <label>Инженерная система<select name="system" required><option value="">Выберите</option><option>Водоснабжение</option><option>Канализация</option><option>Водоотведение</option><option>Ливневая канализация</option><option>Наружные сети</option><option>Тепловые сети</option><option>Реконструкция</option><option>Комплексное решение</option></select></label>
-          <div class="form-row"><label>Вид работ<input name="work" placeholder="Например, строительство"></label><label>Регион<input name="region" placeholder="Город / регион"></label></div>
-          <div class="form-row"><label>Примерная длина трассы<input name="length" placeholder="м"></label><label>Телефон<input name="phone" placeholder="+7..." required></label></div>
-          <label>Комментарий<textarea name="comment" rows="4" placeholder="Опишите задачу своими словами"></textarea></label>
-          <label class="file-input">Загрузить ТЗ / чертежи / документы<input type="file" multiple><span>Выбрать файлы</span></label>
-          <button class="btn btn--dark btn--full" type="submit">Отправить на расчет <span>↗</span></button>
-          <div class="form-consent">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</div>
+          <button class="btn btn--full" type="submit">Передать задачу специалисту <b>↗</b></button>
+          <small class="form-disclaimer">Демо-форма: отправка в CRM будет подключена перед запуском сайта.</small>
           <div class="form-state" id="formState" aria-live="polite"></div>
         </form>
       </div>
     </section>
 
-    <section class="final-cta" id="contacts">
-      <button class="section-review" type="button" data-review-section="Финальный CTA / Контакты">Комментарий к разделу</button>
-      <div class="final-pipe"></div>
-      <div class="container final-cta__inner">
-        <div class="eyebrow">10 / Отдел продаж</div>
-        <h2>Есть задача по инженерным <span>коммуникациям?</span></h2>
-        <p>Расскажите, что необходимо сделать. Специалист ВОДСПЕЦСТРОЙ поможет определить техническое решение и следующий шаг.</p>
-        <div class="final-actions"><a class="btn btn--light" href="#request">Передать задачу специалисту <span>↗</span></a><a class="btn btn--outline-light" href="#request">Получить расчет</a></div>
-        <a class="final-phone" href="tel:+70000000000">+7 (000) 000-00-00 <small>Позвонить в отдел продаж</small></a>
-        <div class="sales-node"><span></span><b>ОТДЕЛ<br>ПРОДАЖ</b></div>
+    <section class="final-cta reviewable" id="contacts">
+      <button class="review-section-button review-section-button--dark" type="button" data-review-section="Финальный CTA">Комментарий</button>
+
+      <div class="shell final-cta__inner">
+        <div class="eyebrow">ВОДСПЕЦСТРОЙ</div>
+        <h2>Задача <span>→</span> решение <span>→</span> реализация</h2>
+        <p>Инженерные коммуникации от исходных данных до готовой системы.</p>
+        <a class="btn btn--light" href="#request">Передать задачу <b>↗</b></a>
       </div>
+      <div class="pipeline pipeline--final"><i></i><i></i><i></i><i></i></div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__top">
-      <div><img src="assets/logo.png" alt="ВОДСПЕЦСТРОЙ" class="footer-logo"><p>Инженерные коммуникации<br>от расчета до реализации.</p></div>
-      <div class="footer-links"><div><b>Навигация</b><a href="#solutions">Решения</a><a href="#process">Как работаем</a><a href="#objects">Работы</a><a href="#about">О компании</a></div><div><b>Контакты</b><a href="tel:+70000000000">+7 (000) 000-00-00</a><a href="mailto:info@example.ru">info@example.ru</a><span>Адрес компании — будет добавлен</span></div></div>
+    <div class="shell footer__grid">
+      <div>
+        <img src="assets/logo.png" class="footer-logo" alt="ВОДСПЕЦСТРОЙ">
+        <p>Инженерные коммуникации<br>от расчета до реализации.</p>
+      </div>
+
+      <nav>
+        <a href="#task">Задача</a>
+        <a href="#process">Как работаем</a>
+        <a href="#works">Виды работ</a>
+        <a href="#gallery">Фотографии</a>
+      </nav>
+
+      <div class="footer__contacts">
+        <b>Контакты</b>
+        <span>Телефон отдела продаж — добавить</span>
+        <span>Email — добавить</span>
+        <span>Адрес — добавить</span>
+      </div>
     </div>
-    <div class="container footer__bottom"><span>© 2026 ВОДСПЕЦСТРОЙ</span><a href="#">Политика конфиденциальности</a><a href="#">Согласие на обработку персональных данных</a></div>
+
+    <div class="shell footer__bottom">
+      <span>© 2026 ВОДСПЕЦСТРОЙ</span>
+      <span>Демонстрационная версия для согласования</span>
+    </div>
   </footer>
 
-  <div class="mobile-cta"><a href="#request">Получить расчет</a><a href="tel:+70000000000">Позвонить</a></div>
+  <div class="mobile-cta">
+    <a href="#request">Передать задачу</a>
+  </div>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Закрыть">×</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" type="button" aria-label="Предыдущее фото">←</button>
+    <figure>
+      <img id="lightboxImage" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__arrow lightbox__arrow--next" type="button" aria-label="Следующее фото">→</button>
+  </div>
+
+  <!-- Review UI -->
   <button class="review-fab" type="button" data-open-review>
-    <span class="review-fab__icon">✎</span>
-    <span>Оставить правки</span>
-    <b id="reviewCount">0</b>
+    <span>✎</span><b>Правки</b><i id="reviewCount">0</i>
   </button>
 
   <div class="review-backdrop" id="reviewBackdrop"></div>
 
   <aside class="review-drawer" id="reviewDrawer" aria-hidden="true">
     <div class="review-drawer__head">
-      <div>
-        <span class="review-kicker">РЕЖИМ СОГЛАСОВАНИЯ</span>
-        <h2>Комментарии к макету</h2>
-      </div>
-      <button class="review-close" type="button" data-close-review aria-label="Закрыть">×</button>
+      <div><small>РЕЖИМ СОГЛАСОВАНИЯ</small><h3>Комментарии к сайту</h3></div>
+      <button type="button" class="review-close" data-close-review>×</button>
     </div>
 
     <div class="review-drawer__body">
-      <p class="review-help">
-        Выберите раздел сайта, напишите, что нужно изменить, и добавьте комментарий.
-        Комментарии сохраняются в этом браузере. Затем их можно скопировать или скачать одним файлом.
-      </p>
+      <p>Замечания сохраняются в этом браузере. После просмотра их можно скопировать или скачать одним файлом.</p>
 
-      <label class="review-field">
-        <span>Раздел</span>
+      <label>Раздел
         <select id="reviewSection">
-          <option>Общий комментарий по сайту</option>
-          <option>Первый экран / Hero</option>
+          <option>Общий комментарий</option>
+          <option>Первый экран</option>
           <option>Блок «Что необходимо решить?»</option>
-          <option>Блок «Не нужно быть инженером»</option>
-          <option>Блок «Один подрядчик — весь цикл»</option>
-          <option>Блок инженерных решений</option>
+          <option>Блок «Как работаем»</option>
+          <option>Блок «Виды работ»</option>
           <option>Блок «Под ключ»</option>
-          <option>Блок типов объектов</option>
-          <option>Портфолио</option>
-          <option>Блок «Почему ВОДСПЕЦСТРОЙ»</option>
-          <option>Документация</option>
-          <option>Форма предварительного расчета</option>
-          <option>Финальный CTA / Контакты</option>
+          <option>Карусель фотографий</option>
+          <option>Форма заявки</option>
+          <option>Финальный CTA</option>
         </select>
       </label>
 
-      <label class="review-field">
-        <span>Что нужно изменить?</span>
-        <textarea id="reviewText" rows="5" placeholder="Например: заменить заголовок, сделать этот блок короче, поменять порядок карточек..."></textarea>
+      <label>Комментарий
+        <textarea id="reviewText" rows="5" placeholder="Что нужно изменить?"></textarea>
       </label>
 
-      <button class="review-add" id="reviewAdd" type="button">Добавить комментарий</button>
+      <button class="btn btn--full" id="reviewAdd" type="button">Добавить комментарий</button>
 
-      <div class="review-list-head">
-        <b>Список правок</b>
-        <button type="button" id="reviewClear">Очистить</button>
-      </div>
-
-      <div class="review-list" id="reviewList">
-        <div class="review-empty">Пока комментариев нет.</div>
-      </div>
+      <div class="review-list-head"><b>Список правок</b><button id="reviewClear" type="button">Очистить</button></div>
+      <div class="review-list" id="reviewList"></div>
     </div>
 
     <div class="review-drawer__foot">
-      <button type="button" class="review-secondary" id="reviewCopy">Скопировать все</button>
-      <button type="button" class="review-primary" id="reviewDownload">Скачать правки .txt</button>
+      <button id="reviewCopy" type="button">Скопировать</button>
+      <button id="reviewDownload" type="button">Скачать .txt</button>
     </div>
   </aside>
 
