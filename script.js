@@ -169,3 +169,33 @@ document.querySelectorAll('.step,.solution,.why-card,.project,.object-card').for
 
   render();
 })();
+
+
+// ===== Portfolio real filtering =====
+(() => {
+  const buttons = document.querySelectorAll('.portfolio-filters .filter');
+  const cards = document.querySelectorAll('.gallery-card');
+  if (!buttons.length || !cards.length) return;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter || 'all';
+      buttons.forEach(x => x.classList.remove('active'));
+      btn.classList.add('active');
+
+      cards.forEach(card => {
+        const cats = (card.dataset.category || '').split(/\s+/).filter(Boolean);
+        const show = filter === 'all' || cats.includes(filter);
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('in-view');
+    });
+  }, {threshold: 0.12});
+
+  document.querySelectorAll('.solution-card,.work-type-card,.gallery-card').forEach(el => observer2.observe(el));
+})();
